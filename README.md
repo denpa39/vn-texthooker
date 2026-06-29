@@ -83,8 +83,10 @@ with `--freq`.
 - **Polished popup** — click a word to pin it open, a copy button, and a Jisho.org link;
   hover for a quick peek.
 - **Furigana toggle**, **text alignment** (left / center / right / justify), adjustable
-  font size, **themes** (six Wonderland palettes plus custom colours & fonts),
-  pause/resume capture, undo, and clear.
+  font size with **bold/italic** toggles, **themes** (six Wonderland palettes plus
+  custom colours & fonts), pause/resume capture, undo, and clear.
+- A flat, editorial reading UI — every colour (including the toolbar fill) is derived
+  from the active theme, so the whole interface re-themes consistently.
 - Everything runs locally on `127.0.0.1`; nothing is sent anywhere, and no account or payment is needed.
 
 ---
@@ -93,14 +95,31 @@ with `--freq`.
 
 | Control | What it does |
 |---|---|
-| ⏸ Pause / ▶ Resume | Stop/continue reading the clipboard |
-| あ Furigana | Show readings above kanji |
-| ≣ Align | Text alignment — left, center, right, or justify |
-| ⚙ Theme | Appearance: theme, colours, and font |
+| status dot | Connection state at a glance — green = ready, orange = paused, red = disconnected (hover for the label) |
+| **Pause** / **Resume** | Stop/continue reading the clipboard |
+| **Furigana** | Show readings above kanji |
+| ▤ alignment icons | Text alignment — left, center, right, or justify |
+| **Theme** | Opens the Appearance panel (themes, colours, font, bold/italic) |
 | A slider | Reader font size |
-| ⌫ Undo | Remove the most recent line |
-| 🗑 Clear | Clear all lines (click twice to confirm) |
-| ● live / paused | Connection + capture status |
+| **Undo** | Remove the most recent line |
+| **Clear** | Clear all lines (click twice to confirm) |
+
+### Appearance panel
+
+Click **Theme** to open it:
+
+- **Theme** — six Wonderland palettes (Alice, Caterpillar, Cheshire, Mad Hatter, Queen
+  of Hearts, White Rabbit). Picking one recolours everything — toolbar, popup, reader,
+  highlights — since every surface derives its colour from the same six theme variables.
+- **Colours** — override any individual swatch (background, text, accent, reading,
+  tag, furigana) on top of the current theme.
+- **Font** — pick a font stack (sans, Gothic, Mincho serif, rounded, or monospace); use
+  the toolbar's **A** slider for size.
+- **B** / *I* — toggle bold or italic for the reader text.
+- **Reset to default** — clears every override back to the default theme.
+
+All of the above is saved to your browser's local storage and restored automatically
+next time you open the page — no flash of the wrong theme on load.
 
 ---
 
