@@ -1,3 +1,10 @@
+/* Bundled JP webfonts (offline — served from static/fonts/, no CDN fetch) */
+@font-face { font-family: "Noto Serif JP"; src: url("fonts/NotoSerifJP-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Noto Serif JP"; src: url("fonts/NotoSerifJP-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "M PLUS Rounded 1c"; src: url("fonts/MPlusRounded1c-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "M PLUS Rounded 1c"; src: url("fonts/MPlusRounded1c-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Kosugi Maru"; src: url("fonts/KosugiMaru.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+
 /* Theme model ----------------------------------------------------------- *
  * A theme is just 6 core colors (+ a font). Everything else — panels, lines,
  * borders, muted text, gradients, hover overlays — is DERIVED from them with

@@ -26,8 +26,9 @@
   const FONTS = {
     "Default (Sans)": '"Segoe UI", system-ui, sans-serif',
     "Gothic (JP)":    '"Yu Gothic", "YuGothic", "Meiryo", "Noto Sans JP", sans-serif',
-    "Mincho (Serif)": '"Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "MS Mincho", "Noto Serif JP", serif',
-    "Rounded":        '"Yu Gothic UI", "BIZ UDPGothic", "Hiragino Maru Gothic ProN", "M PLUS Rounded 1c", sans-serif',
+    "Mincho (Serif)": '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "MS Mincho", serif',
+    "Rounded":        '"M PLUS Rounded 1c", "Yu Gothic UI", "BIZ UDPGothic", "Hiragino Maru Gothic ProN", sans-serif',
+    "Maru":           '"Kosugi Maru", "Yu Gothic UI", "Hiragino Maru Gothic ProN", sans-serif',
     "Monospace":      '"Cascadia Code", "Consolas", "MS Gothic", monospace',
   };
   const DEFAULTS = { preset: "Alice", colors: {}, font: "Default (Sans)", fontSize: 30, align: "left", bold: false, italic: false };
